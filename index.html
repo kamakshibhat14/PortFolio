@@ -1,321 +1,1403 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s, transform 0.7s;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: none;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - SnapFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body data-theme="dark">
-    <header>
-        <nav>
-            <h1>My Portfolio</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certification</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>Hi, I'm P Kamakshi Bhat</h2>
-        <p>A Web Developer</p>
-        <div class="social-links">
-            <a href="https://github.com/kamakshibhat14" class="social"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/pkamakshibhat" class="social"><i class="fab fa-linkedin"></i></a>
-            <!-- <a href="#" class="social"><i class="fab fa-twitter"></i></a> -->
-            <a class="resume" href="resume.pdf" download>Download Resume</a>
-        </div>
-    </section>
+<body class="index-page">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Aspiring full-stack web developer with hands-on experience in Spring Boot, React.js, Node.js, and MySQL. Passionate about building scalable, secure, and people-centered solutions. Eager to contribute to real-world software projects with strong problem-solving and collaborative skills.</p>
-    </section>
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-carousel-wrapper">
-        <div class="skills-carousel">
-            <div class="skill-card fade-in">
-                <img src="images/html.png" alt="HTML" class="skill-img" />
-                <span>HTML</span>
-            </div>
-            <div class="skill-card fade-in">
-                <img src="images/css.png" alt="CSS" class="skill-img" />
-                <span>CSS</span>
-            </div>
-            <div class="skill-card fade-in">
-                <img src="images/js.png" alt="JavaScript" class="skill-img" />
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card fade-in">
-                <img src="images/react.png" alt="React" class="skill-img" />
-                <span>React</span>
-            </div>
-            <div class="skill-card fade-in">
-                <img src="images/mongodb.png" alt="MongoDB" class="skill-img" />
-                <span>MongoDB</span>
-            </div>
-            <div class="skill-card fade-in">
-                <img src="images/node.png" alt="NodeJS" class="skill-img" />
-                <span>Node Js</span>
-            </div>
-            <!-- Add more skill cards as needed -->
-        </div>
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+          <li><a href="#experience"><i class="bi bi-briefcase navicon"></i> Experience</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> What I Build</a></li>
+          <li><a href="#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
+          <li><a href="#achievements"><i class="bi bi-journal-check navicon"></i> Achievements</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+
+        <a href="https://github.com/kamakshibhat14" target="_blank" title="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/pkamakshibhat" target="_blank" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://leetcode.com/" target="_blank" title="LeetCode">
+          <i class="bi bi-code-slash"></i>
+        </a>
+
+      </div>
+
     </div>
-</section>
 
-    <section id="projects">
-                <h2>Projects</h2>
-                <p>Here are some of my recent works:</p>
-                <div class="projects-carousel-wrapper">
-                    <div class="projects-carousel">
-                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/PRODIGY_FS_01" target="_blank" rel="noopener">
-                            <img src="images/auth.png" alt="Authentication System" class="project-img">
-                            <h3>Secure Authentication System</h3>
-                            <p>Authentication System using MERN Stack</p>
-                        </a>
-                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/quiz1" target="_blank" rel="noopener">
-                            <img src="images/voice.png" alt="quiz" class="project-img">
-                            <h3>Voice-Interactive Quiz</h3>
-                            <p>A web application that allows users to take quizzes using voice commands.</p>
-                        </a>
-                        <!-- <a class="project-card fade-in" href="https://github.com/shreyask253/blog-platform" target="_blank" rel="noopener">
-                            <img src="images/profile.jpg" alt="Blog Platform" class="project-img">
-                            <h3>Blog Platform</h3>
-                            <p>Simple blog platform built with React and Node.js.</p>
-                        </a> -->
-                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/quizproject" target="_blank" rel="noopener">
-                            <img src="images/voive quiz.jpg" alt="E-Commerce Platform" class="project-img">
-                            <h3>Vocal Genius- Online Voice Enabled Quiz Platform</h3>
-                            <p>Created a voice-driven quiz web application presenting audio
-based questions.</p>
-                        </a>
-                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/Community_Discussion_Board" target="_blank" rel="noopener">
-                            <img src="images/communitiy.png" alt="Flutter" class="project-img">
-                            <h3>Community Dashboard</h3>
-                            <p>A web application for community engagement and resource sharing.</p>
-                        </a>
-                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/food-rescue-project" target="_blank" rel="noopener">
-                            <img src="images/food.jpg" alt="Food Rescue Project" class="project-img">
-                            <h3>Food Rescue Project</h3>
-                            <p>A web application to connect restaurants with local shelters to donate excess food.</p>
-                        </a>
-                        <!-- Add more project cards as needed -->
-                    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>P.Kamakshi<span class="accent-text">Bhat</span></h1>
+
+                <p class="lead">I'm a <span class="typed"
+                    data-typed-items="Full Stack Developer, FrontEnd Developer, MERN Stack Developer, AI Project Developer, Software Engineer"></span></p>
+                <p class="description">
+
+                  Aspiring full-stack web developer with hands-on experience in Spring Boot,
+                  React.js, Node.js, and MySQL. Passionate about building scalable, secure,
+                  and people-centered solutions.
+                </p>
+
+                <p>
+                  Eager to contribute to real-world software projects with strong
+                  problem-solving and collaborative skills.
+                </p>
+
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
+
+                <div class="social-links">
+                  <a href="https://github.com/kamakshibhat14" target="_blank"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/pkamakshibhat" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="images/profile.jpeg" alt="P Kamakshi Bhat" class="profile-image">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="about-logo">
+                  <i class="bi bi-code-slash"></i>
+
+                  <span class="profile-badge">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </span>
+                </div>
+              </div>
+
+
+              <div class="profile-content">
+                <h3>P Kamakshi Bhat</h3>
+                <p class="profession">Full Stack Web Developer</p>
+
+
+                <div class="contact-links">
+                  <a href="mailto:kamakshibhat14@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    kamakshibhat14@gmail.com
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Karnataka, India
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Get to Know Me</span>
+                <h2>About Me</h2>
+
+                <p>
+                  I am an MCA student with strong interest in full stack web development and AI-powered applications.
+                  I enjoy solving real-world problems through clean and efficient code.
+                </p>
+
+                <p>
+                  I have built projects using MERN Stack, Flask, MongoDB, and OpenCV,
+                  and I am continuously learning modern technologies to improve my development skills.
+                </p>
+
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">7+</div>
+                  <div class="stat-label">Projects Built</div>
+                </div>
+
+                <div class="stat-item">
+                  <div class="stat-number">Strong</div>
+                  <div class="stat-label">Problem Solving</div>
+                </div>
+
+                <div class="stat-item">
+                  <div class="stat-number">Hands-on</div>
+                  <div class="stat-label">Development projects</div>
+                </div>
+
+
+              </div>
+
+              <div class="details-grid">
+
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Specialization</span>
+                    <span class="detail-value">Full Stack Web Development</span>
+                  </div>
+
+                  <div class="detail-item">
+                    <span class="detail-label">Experience Level</span>
+                    <span class="detail-value">Entry-Level Developer</span>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">MCA (2024 – 2026)</span>
+                  </div>
+
+                  <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">English, Kannada, Hindi</span>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="cta-section">
+                <a href="resume.pdf" class="btn btn-primary" download>
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+
+                <a href="#" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="stats-wrapper">
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="icon-wrapper">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <span>7+</span>
+                <p>Projects Built</p>
+              </div>
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-wrapper">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <span>MCA</span>
+                <p>Postgraduate Student</p>
+              </div>
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-wrapper">
+                  <i class="bi bi-stack"></i>
+                </div>
+                <span>10+</span>
+                <p>Technologies Used</p>
+              </div>
+
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-wrapper">
+                  <i class="bi bi-github"></i>
+                </div>
+                <span>Active</span>
+                <p>GitHub Projects</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Front-end Development</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>HTML/CSS</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Expert level knowledge of semantic HTML5 and modern CSS3 techniques</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>JavaScript</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Strong proficiency in ES6+, DOM manipulation, and modern frameworks</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>React.js</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Frontend Skills -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Back-end Development</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Node.js</h4>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Server-side JavaScript development with Express and REST APIs</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Python/Flask</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Python development with Django and data analysis tools</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>SQL / MongoDB</h4>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Database design, optimization, and complex queries</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Spring Boot</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">REST APIs, CRUD applications, and backend integration</div>
+                </div>
+              </div>
+            </div><!-- End Backend Skills -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>
+          Aspiring Full Stack Web Developer and MCA student with hands-on experience
+          in MERN Stack, Spring Boot, Flask, and AI-based applications. Passionate about
+          building secure, scalable, and user-focused software solutions.
+        </p>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with summary and contact -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4"> 
+                <img src="images/profile.jpeg" alt="Profile" class="img-fluid rounded"> 
+              </div>
+
+              <h3>Professional Summary</h3>
+              <p>
+                Aspiring Full Stack Web Developer with practical experience in MERN Stack,
+                Spring Boot, and AI-powered applications. Strong foundation in backend
+                development, REST APIs, authentication systems, and database design.
+              </p>
+
+              <h3 class="mt-4">Contact Information</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Mangalore, Karnataka, India</li>
+                <li><i class="bi bi-envelope"></i> kamakshibhat9@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +91 8277762064</li>
+                <li><i class="bi bi-github"></i> github.com/kamakshibhat14</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/pkamakshibhat</li>
+              </ul>
+
+
+              <div class="skills-animation mt-4">
+                <h3>Technical Skills</h3>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>MERN Stack (MongoDB, Express, React, Node.js)</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Spring Boot & Java</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Python & Flask</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>SQL & MongoDB</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>REST APIs & Authentication (JWT)</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Git & GitHub</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right column with experience and education -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <!-- Experience Section -->
+            <div class="resume-section" data-aos="fade-up">
+              <div class="resume-section" data-aos="fade-up">
+                <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+
+                <div class="resume-item">
+                  <h4>Full Stack Web Development Intern</h4>
+                  <h5>2024</h5>
+                  <p class="company">
+                    <i class="bi bi-building"></i> Prodigy InfoTech
+                  </p>
+                  <ul>
+                    <li>Developed full-stack applications using MERN Stack</li>
+                    <li>Implemented JWT-based authentication and secure login systems</li>
+                    <li>Built RESTful APIs and integrated MongoDB databases</li>
+                    <li>Worked on real-world projects focusing on scalability and security</li>
+                  </ul>
+                </div>
+
+                <div class="resume-item">
+                  <h4>React.js Intern – CodeLab Systems</h4>
+                  <h5>Jan 2026 – Feb 2026</h5>
+                  <p>
+                    Focused on frontend development using React.js, UI optimization,
+                    and REST API integration.
+                  </p>
+                </div>
+              </div>
+
+
+              <!-- Education Section -->
+              <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+                <div class="resume-item">
+                  <h4>Master of Computer Application (MCA)</h4>
+                  <h5>2024 – 2026</h5>
+                  <p class="company">
+                    <i class="bi bi-building"></i> NMAM Institute of Technology, Nitte
+                  </p>
+                </div>
+
+                <div class="resume-item">
+                  <h4>Bachelor of Computer Application (BCA)</h4>
+                  <h5>2021 – 2024</h5>
+                  <p class="company">
+                    <i class="bi bi-building"></i> Govinda Dasa Degree College, Surathkal
+                  </p>
+                </div>
+              </div>
+      
+              <!-- Tools & Platforms -->
+              <div class="resume-section tools-section">
+                <h3 class="resume-title">
+                  <i class="bi bi-tools"></i> Tools & Platforms
+                </h3>
+
+                <ul class="tools-list">
+                  <li><i class="bi bi-check-circle-fill"></i> VS Code, Git, GitHub</li>
+                  <li><i class="bi bi-check-circle-fill"></i> REST APIs, JWT Authentication</li>
+                  <li><i class="bi bi-check-circle-fill"></i> MySQL, MongoDB, Firebase</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Flask, spaCy, WordNet, SBERT, PyTorch</li>
+                  <li><i class="bi bi-check-circle-fill"></i> MongoDB Atlas, Cloud Computing (Basics)</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Excel Automation, Dashboard Creation</li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div> 
+        </div>
+
+    </section><!-- /Resume Section -->
+
+      <!-- Experience Section -->
+        <section id="experience" class="services section">
+
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Professional Experience</h2>
+            <p>
+              Internship experiences demonstrating hands-on development in
+              frontend and full-stack technologies.
+            </p>
+          </div>
+
+          <div class="container">
+            <div class="row gy-4">
+
+              <!-- React.js Intern -->
+              <div class="col-lg-6 col-md-6">
+                <div class="service-item">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>React.js Intern</h3>
+                  <h5>CodeLab Systems, Mangalore</h5>
+                  <p><strong>Jan 2026 – Feb 2026</strong></p>
+                  <ul>
+                    <li>Completed structured internship focused on React.js development.</li>
+                    <li>Developed responsive UI components and integrated REST APIs.</li>
+                    <li>Improved application performance through optimized component design.</li>
+                  </ul>
+
+                  <!-- View Certificate Button -->
+                  <a href="https://drive.google.com/file/d/1WfcSF3CfgaARyvu3-t2P4BMnPgeAq4Ft/view?usp=drive_link"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary mt-2">
+                    <i class="bi bi-folder2-open"></i> View Certificate
+                  </a>
+
+                </div>
+              </div>
+
+              <!-- Full Stack Intern -->
+              <div class="col-lg-6 col-md-6">
+                <div class="service-item">
+                  <i class="bi bi-layers"></i>
+                  <h3>Full Stack Web Development Intern</h3>
+                  <h5>Prodigy InfoTech</h5>
+                  <p><strong>Jul 2025 – Aug 2025</strong></p>
+                  <ul>
+                    <li>Completed 1-month internship (15 July – 15 August 2025).</li>
+                    <li>Worked with Flask, Bootstrap, SQLite, REST APIs, and deployment.</li>
+                    <li>Contributed to backend API development and frontend integration.</li>
+                  </ul>
+
+                  <!-- View Certificate Button -->
+                  <a href="https://drive.google.com/file/d/1gIk3UqCqRLVJCPft0Yb3HmJ3OPC5tIje/view?usp=drive_link"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary mt-2">
+                    <i class="bi bi-folder2-open"></i> View Certificate
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>
+          Real-world academic and internship projects built using MERN Stack,
+          Spring Boot, Flask, and AI technologies.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 portfolio-container">
+
+          <!-- LLM Sentence Processing -->
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-wrap project-card">
+
+              <div class="video-wrapper">
+                <video muted loop playsinline preload="metadata">
+                  <source src="videos/llm.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-overlay">
+                  <div class="overlay-content">
+                    <h4>LLM Sentence Processing System</h4>
+                    <p>
+                      LLM-based application for sentence reframing, verb extraction,
+                      and context-aware synonym replacement.
+                    </p>
+                    <p class="tech"><strong>Tech Stack:</strong> Python, Flask, NLP</p>
+
+                    <button class="view-btn"
+                      onclick="openVideo('videos/llm.mp4')">
+                      ▶ View Full Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- AlphaVision -->
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-wrap project-card">
+
+              <div class="video-wrapper">
+                <video muted loop playsinline preload="metadata">
+                  <source src="videos/alphavision.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-overlay">
+                  <div class="overlay-content">
+                    <h4>AlphaVision</h4>
+                    <p>
+                      AI-powered vision-based detection system performing real-time
+                      analysis using computer vision.
+                    </p>
+                    <p class="tech">
+                      <strong>Tech Stack:</strong> Python, OpenCV, Flask, MongoDB
+                    </p>
+
+                    <button class="view-btn"
+                      onclick="openVideo('videos/alphavision.mp4')">
+                      ▶ View Full Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- SmartCrop Advisory -->
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-wrap project-card">
+
+              <div class="video-wrapper">
+                <video muted loop playsinline preload="metadata">
+                  <source src="videos/SmartCropAdvisory.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-overlay">
+                  <div class="overlay-content">
+                    <h4>SmartCrop Advisory</h4>
+                    <p>
+                      Intelligent agriculture advisory system providing crop
+                      recommendations and disease insights.
+                    </p>
+                    <p class="tech">
+                      <strong>Tech Stack:</strong> Python, ML, Flask, MongoDB
+                    </p>
+
+                    <button class="view-btn"
+                      onclick="openVideo('videos/SmartCropAdvisory.mp4')">
+                      ▶ View Full Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Quiz Application -->
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-wrap project-card">
+
+              <div class="video-wrapper">
+                <video muted loop playsinline preload="metadata">
+                  <source src="videos/quiz_mca.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-overlay">
+                  <div class="overlay-content">
+                    <h4>Quiz Application</h4>
+                    <p>
+                      Online quiz system with real-time scoring and
+                      user interaction.
+                    </p>
+                    <p class="tech">
+                      <strong>Tech Stack:</strong> Java, Spring Boot, MySQL
+                    </p>
+
+                    <button class="view-btn"
+                      onclick="openVideo('videos/quiz_mca.mp4')">
+                      ▶ View Full Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+          </div>
+        </div>
+      </div>
+
     </section>
+    <!-- /Portfolio Section -->
 
-    <section id="education">
-    <h2>Education</h2>
-    <div class="education-cards">
-        <div class="education-card fade-in">
-            <img src="images/nitte.png" alt="NMAMIT Logo" class="education-logo" />
-            <h3>Master of Computer Application</h3>
-            <p>NMAM Institute of Technology, Nitte</p>
-            <p>2024 – 2026</p>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What I Build</h2>
+        <p>
+          Practical full-stack and AI-powered applications developed through
+          academic projects, internships, and hands-on learning.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="service-item">
+              <i class="bi bi-layers"></i>
+              <h3>Full Stack Web Applications</h3>
+              <p>
+                End-to-end web applications using MERN Stack and Spring Boot with
+                secure authentication and database integration.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <i class="bi bi-shield-lock"></i>
+              <h3>Authentication & Security</h3>
+              <p>
+                JWT-based authentication systems with role-based access control
+                and secure APIs.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <i class="bi bi-cpu"></i>
+              <h3>AI & ML Applications</h3>
+              <p>
+                AI-powered solutions including computer vision, NLP, and
+                recommendation systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <i class="bi bi-database"></i>
+              <h3>Backend & Databases</h3>
+              <p>
+                REST APIs and data-driven applications using MongoDB and MySQL.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <i class="bi bi-git"></i>
+              <h3>GitHub-Driven Development</h3>
+              <p>
+                Clean, version-controlled projects with proper documentation and
+                real-world workflows.
+              </p>
+            </div>
+          </div>
+
         </div>
-        <div class="education-card fade-in">
-            <img src="images/govinda.webp" alt="Govinda Dasa College Logo" class="education-logo" />
-            <h3>Bachelor of Computer Application</h3>
-            <p>Govinda Dasa Degree College, Surathkal</p>
-            <p>2021 – 2024</p>
-        </div>
-        <!-- Add more education-card blocks as needed -->
-    </div>
-</section>
+      </div>
 
-<section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications-carousel-wrapper">
-        <div class="certifications-carousel">
-            <a class="certification-card fade-in" href="images/research.jpg" target="_blank" rel="noopener">
-                <img src="images/reserach.webp" alt="Research Methodology and Publication (PDF)" class="certification-img">
-                <h3>Research Methodology and Publication</h3>
-                <!-- <p>, 2024</p> -->
-            </a>
-            
-            <a class="certification-card fade-in" href="images/cloud.jpg" target="_blank" rel="noopener">
-                <img src="images/cloud.png" alt="Cloud Computing (PDF)" class="certification-img">
-                <h3>Cloud Computing</h3>
-                <!-- <p>HackerRank, 2023</p> -->
-            </a>
-             <a class="certification-card fade-in" href="images/geeks.jpg" target="_blank" rel="noopener">
-                <img src="images/data.png" alt="Geeks (PDF)" class="certification-img">
-                <h3>Data Science BootCamp</h3>
-                <p>GeeksForGeeks, 2025</p>
-            </a>
-             <a class="certification-card fade-in" href="images/flutter.jpg" target="_blank" rel="noopener">
-                <img src="images/flutter.png" alt="Flutter (PDF)" class="certification-img">
-                <h3>Flutter</h3>
-                <!-- <p>HackerRank, 2023</p> -->
-            </a>
-             <a class="certification-card fade-in" href="images/mern.jpg" target="_blank" rel="noopener">
-                <img src="images/full.jpg" alt="MERN (PDF)" class="certification-img">
-                <h3>Full Stack Development (MERN Stack)</h3>
-                <!-- <p>HackerRank, 2023</p> -->
-            </a>
-            <a class="certification-card fade-in" href="images/digital.jpg" target="_blank" rel="noopener">
-                <img src="images/digital marketing.jpg" alt="MERN (PDF)" class="certification-img">
-                <h3>Digital Marketing</h3>
-                <p>Excel-R, 2025</p>
-            </a>
-             <a class="certification-card fade-in" href="certificate/Certificate (1).pdf" target="_blank" rel="noopener">
-                <img src="images/prodigy.jpg" alt="MERN (PDF)" class="certification-img">
-                <h3>Prodigy Internship</h3>
-                <p>Prodigy, 2025</p>
-            </a>
-
-            
-            <!-- Add more certification cards as needed -->
-        </div>
-    </div>
-</section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xnnzekqa" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" required></textarea><br>
-    <button type="submit">Send</button>
-</form>
     </section>
-
+    <!-- /Services Section -->
     
-        <footer>
-                <p>&copy; 2025 P Kamakshi Bhat. All rights reserved.</p>
-        </footer>
-        <script>
-            // Fade-in animation for skill, project, and certification cards
-            function animateOnScroll(selector) {
-                const elements = document.querySelectorAll(selector);
-                const observer = new window.IntersectionObserver((entries, obs) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            obs.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.2 });
-                elements.forEach(el => observer.observe(el));
-            }
-            document.addEventListener('DOMContentLoaded', function() {
-                animateOnScroll('.skill-card');
-                animateOnScroll('.project-card');
-                animateOnScroll('.certification-card');
-                animateOnScroll('.education-card'); // <-- Add this line
-                // Scroll certifications carousel to the start (first certificate) on load
-                const certificationsCarousel = document.querySelector('.certifications-carousel');
-                if (certificationsCarousel) {
-                    certificationsCarousel.scrollLeft = 0;
-                }
-            });
-            // Projects carousel drag-to-scroll only
-            const carousel = document.querySelector('.projects-carousel');
-            if (carousel) {
-                let isDown = false;
-                let startX;
-                let scrollLeft;
-                carousel.addEventListener('mousedown', (e) => {
-                    isDown = true;
-                    carousel.classList.add('dragging');
-                    startX = e.pageX - carousel.offsetLeft;
-                    scrollLeft = carousel.scrollLeft;
-                });
-                carousel.addEventListener('mouseleave', () => {
-                    isDown = false;
-                    carousel.classList.remove('dragging');
-                });
-                carousel.addEventListener('mouseup', () => {
-                    isDown = false;
-                    carousel.classList.remove('dragging');
-                });
-                carousel.addEventListener('mousemove', (e) => {
-                    if (!isDown) return;
-                    e.preventDefault();
-                    const x = e.pageX - carousel.offsetLeft;
-                    const walk = (x - startX) * 1.5; // scroll-fast
-                    carousel.scrollLeft = scrollLeft - walk;
-                });
-            }
 
-    // Skills carousel drag-to-scroll only
-    const skillsCarousel = document.querySelector('.skills-carousel');
-    if (skillsCarousel) {
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-        skillsCarousel.addEventListener('mousedown', (e) => {
-            isDown = true;
-            skillsCarousel.classList.add('dragging');
-            startX = e.pageX - skillsCarousel.offsetLeft;
-            scrollLeft = skillsCarousel.scrollLeft;
-        });
-        skillsCarousel.addEventListener('mouseleave', () => {
-            isDown = false;
-            skillsCarousel.classList.remove('dragging');
-        });
-        skillsCarousel.addEventListener('mouseup', () => {
-            isDown = false;
-            skillsCarousel.classList.remove('dragging');
-        });
-        skillsCarousel.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - skillsCarousel.offsetLeft;
-            const walk = (x - startX) * 1.5;
-            skillsCarousel.scrollLeft = scrollLeft - walk;
-        });
+    <!-- Academic & Project Highlights Section -->
+    <section id="highlights" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Academic & Project Highlights</h2>
+        <p>
+          Key learning outcomes and achievements from academic coursework
+          and real-world projects.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="service-item">
+              <i class="bi bi-code-slash"></i>
+              <h3>Full Stack Development</h3>
+              <p>
+                Developed multiple full-stack applications integrating frontend,
+                backend, and databases with real-time features.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <i class="bi bi-cpu"></i>
+              <h3>AI & Intelligent Systems</h3>
+              <p>
+                Built AI-based systems using Computer Vision and NLP
+                to solve real-world problems.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <i class="bi bi-shield-lock"></i>
+              <h3>Secure Backend Systems</h3>
+              <p>
+                Hands-on experience with secure authentication, REST APIs,
+                and deployment-ready applications.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- /Academic & Project Highlights Section -->
+
+    <!-- Certifications & Research Section -->
+    <section id="certifications" class="services section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Certifications & Research</h2>
+    <p>
+      Professional certifications, workshops, academic training, and conference achievements.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Data Science Bootcamp -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-award"></i>
+          <h3>Data Science Bootcamp – GeeksForGeeks</h3>
+          <p>6-week hands-on training in Data Science, ML models, preprocessing, and evaluation.</p>
+          <a href="https://drive.google.com/file/d/1bIR9gltWLD3nTqBjnRmw8lJMST1l4jge/view?usp=sharing"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Deloitte -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-bar-chart"></i>
+          <h3>Deloitte Australia – Data Analytics Job Simulation (Forage)</h3>
+          <p>Excel analysis, dashboard creation, business insights, and real-world analytics simulation.</p>
+          <a href="https://drive.google.com/file/d/1U0jGqsv95WAcxk1W5VhX3W2lI-aTClW6/view?usp=sharing"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Cloud Computing -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-cloud"></i>
+          <h3>Cloud Computing Workshop</h3>
+          <p>Introduction to cloud infrastructure, deployment models, and services.</p>
+          <a href="https://drive.google.com/file/d/1UWIuRHjzmYMkKUQw1yX5huNz2olff1gj/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Salesforce -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-cloud-check"></i>
+          <h3>Salesforce Trailhead – Agentblazer Champion & Innovator</h3>
+          <p>Earned Salesforce badges demonstrating CRM and cloud platform knowledge.</p>
+          <a href="https://www.salesforce.com/trailblazer/e4713xmmsblxlrahpw" target="_blank" class="btn btn-sm btn-outline-primary">
+            View Profile
+          </a>
+        </div>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-database-check"></i>
+          <h3>MongoDB Certification</h3>
+          <p>Completed MongoDB fundamentals and database management training.</p>
+          <a href="https://drive.google.com/file/d/1Gb0HR_4XxBNsraBNdIHFrP2dp_ZerL80/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-primary">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Computer Architecture -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-cpu"></i>
+          <h3>Computer Architecture</h3>
+          <p>Certification covering processor design, memory hierarchy, and system organization.</p>
+          <a href="https://drive.google.com/file/d/1Y3Gpnxw_J8agH2_lvfZQqhU4_wqDUeaA/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-primary">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Flutter -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-phone"></i>
+          <h3>Flutter Development Workshop</h3>
+          <p>Mobile app development using Flutter framework and Dart.</p>
+          <a href="https://drive.google.com/file/d/100nbp5bfpw0KVFpLxyMjx26isx2JG9I5/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Research Methodology -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-journal-text"></i>
+          <h3>Research Methodology & Publication</h3>
+          <p>Academic research writing, paper structuring, and publication process training.</p>
+          <a href="https://drive.google.com/file/d/12lbas8rTn03BXoqrD2WPI8F8DJGrjxFV/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Microsoft AI -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-microsoft"></i>
+          <h3>Microsoft AI Innovation 2025 Challenges</h3>
+          <p>Completed Applied AI, Microsoft AI Learning, and Azure Learning Challenges.</p>
+          <a href="https://drive.google.com/file/d/1WP1OvrX-CBKNeUDt6LErgomLCr7zAO_c/view?usp=sharing"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+          <a href="https://drive.google.com/file/d/12ZkbfmJZpIAgozZydCFtd5fypF7F43Zt/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+          <a href="https://drive.google.com/file/d/11Eii4tsCXKoGPGr0bNssbUznhgMYG_RQ/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="col-lg-6 col-md-6">
+        <div class="service-item">
+          <i class="bi bi-graph-up"></i>
+          <h3>Digital Marketing – ExcelR</h3>
+          <p>30-hour training program covering digital strategy and analytics.</p>
+          <a href="https://drive.google.com/file/d/1ibMfdFFFkLmGznWCBb1tTJBI6CCOBMDk/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- Achievements & Publications Section -->
+<section id="achievements" class="services section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Achievements & Publications</h2>
+    <p>
+      Research publications, academic recognition, and conference presentations.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- IEEE Conference Publication -->
+      <div class="col-lg-12">
+        <div class="service-item">
+          <i class="bi bi-journal-check"></i>
+          <h3>IEEE CSITSS-2025 Conference Publication</h3>
+
+          <p>
+            Presented and published research paper titled:
+          </p>
+
+          <p>
+            <strong>
+              “LLM Transform: A Unified Pipeline for Semantic Rewriting
+              of Sentences, Paragraphs, and Questions”
+            </strong>
+          </p>
+
+          <p>
+            Conference: IEEE CSITSS-2025 <br>
+            Venue: RV College of Engineering, Bengaluru <br>
+            Focus Areas: Large Language Models (LLMs), NLP,
+            Semantic Rewriting, Context-Aware Synonym Replacement
+          </p>
+
+          <a href="https://drive.google.com/file/d/1FV4PGyf23O1vz7RjXeEb-QRtRCXTngC4/view?usp=drive_link"
+             target="_blank"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-folder2-open"></i> View Publication Certificate
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>
+          Interested in my projects, internships, or collaboration opportunities?
+          Feel free to reach out.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+
+          <!-- Contact Info -->
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p>
+                I’m an MCA student and full-stack developer open to internships,
+                academic collaborations, and project discussions.
+              </p>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Karnataka, India</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>kamakshibhat9@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <div class="content">
+                  <h4>GitHub</h4>
+                  <p>
+                    <a href="https://github.com/kamakshibhat14" target="_blank">
+                      github.com/kamakshibhat14
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="content">
+                  <h4>LinkedIn</h4>
+                  <p>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                      View my LinkedIn profile
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>
+                Send me a message for internship opportunities, project discussions,
+                or academic collaboration.
+              </p>
+
+              <form action="https://formspree.io/f/xnnzekqa" method="POST" autocomplete="off">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>
+          © <span>2025</span>
+          <strong class="px-1 sitename">P Kamakshi Bhat</strong>
+          <span>• MCA Student • Full Stack Developer</span>
+        </p>
+      </div>
+
+      <div class="text-center mt-2">
+        <a href="https://github.com/kamakshibhat14" target="_blank" class="me-3">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pkamakshibhat" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const videos = document.querySelectorAll(".project-card video");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, { threshold: 0.6 });
+
+    videos.forEach(video => observer.observe(video));
+  </script>
+
+  <script>
+    window.addEventListener("pageshow", function () {
+      const form = document.querySelector("form");
+      if (form) {
+        form.reset();
+      }
+    });
+  </script>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <span class="video-close" onclick="closeVideo()">✕</span>
+      <video id="modalVideo" controls autoplay></video>
+    </div>
+  </div>
+
+  <script>
+    function openVideo(videoSrc) {
+      const modal = document.getElementById("videoModal");
+      const video = document.getElementById("modalVideo");
+
+      video.pause();
+      video.src = videoSrc;
+      video.load();
+      modal.classList.add("active");
+      video.play();
     }
 
-    // Certifications carousel drag-to-scroll only
-    const certificationsCarousel = document.querySelector('.certifications-carousel');
-    if (certificationsCarousel) {
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-        certificationsCarousel.addEventListener('mousedown', (e) => {
-            isDown = true;
-            certificationsCarousel.classList.add('dragging');
-            startX = e.pageX - certificationsCarousel.offsetLeft;
-            scrollLeft = certificationsCarousel.scrollLeft;
-        });
-        certificationsCarousel.addEventListener('mouseleave', () => {
-            isDown = false;
-            certificationsCarousel.classList.remove('dragging');
-        });
-        certificationsCarousel.addEventListener('mouseup', () => {
-            isDown = false;
-            certificationsCarousel.classList.remove('dragging');
-        });
-        certificationsCarousel.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - certificationsCarousel.offsetLeft;
-            const walk = (x - startX) * 1.5;
-            certificationsCarousel.scrollLeft = scrollLeft - walk;
-        });
+    function closeVideo() {
+      const modal = document.getElementById("videoModal");
+      const video = document.getElementById("modalVideo");
+
+      video.pause();
+      video.currentTime = 0;
+      video.src = "";
+      modal.classList.remove("active");
     }
-</script>
+  </script>
+
+
 </body>
+
 </html>
